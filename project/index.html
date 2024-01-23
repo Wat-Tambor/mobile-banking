@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
+
+    <body class="wrapper" id="body">
+        <div class="navbar" id="navbar">
+            <div>
+                <img src="images/starlingbank.png" alt="">
+            </div>
+            <div class="navbar-items navbar-hidden" id="navbar-items">
+                <a class="navbar-item current" href="#">Features</a>
+                <a class="navbar-item" href="#">Pricing</a>
+                <a class="navbar-item" href="#">Help</a>
+                <a class="navbar-item" href="#">Blog</a>
+                <a class="navbar-item" href="#">About Us</a>
+                <div id="mobile-auth" class="mobile-auth">
+                    <a class="navbar-item" href="#">Login</a>
+                    <a class="navbar-item" href="#">Sign Up</a>
+                </div>
+            </div>
+            <div class="hamburger-container" onclick={changeNavbarState()}>
+                <i class="fa-solid fa-bars fa-2xl nav-icon" id="nav-burger"></i>
+                <i class="fa-solid fa-xmark fa-2xl nav-icon" id="nav-cross"></i>
+            </div>
+        </div>
+        <div class="content" id="content">
+            <div class="a">
+                <div>
+                    <h3 class="tagline">Start Saving Money</h3>
+                    <h1 class="hero-text">Smart Credit Card For Your Daily Life.</h1>
+                    <button class="cta">
+                        <div class="cta-text">Download  <i class="fa-regular fa-circle-down cta-icon"></i></div>
+                       
+                    </button>
+                </div>
+                
+            </div>
+            <div class="b">
+                <div class="hero-image-container">
+                    <img class="hero-image" src="images/hero.png" alt="phone displaying a mobile banking application">
+                </div>
+            </div>
+        </div>
+        
+    </body>
+
+    <script src="https://kit.fontawesome.com/bb390429a4.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+</html>

@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* write your CSS here */
+
+body {
+    background-color: #1E1E1E;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar-background {
+    background-color: #0e0e0e;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: auto auto;
+    padding: 2.5rem;
+}
+
+@media only screen and (min-width: 769px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+.tagline {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #E9DCFF;
+    opacity: 0.8;
+   margin-top: 2.5rem;
+}
+
+.hero-text {
+    font-weight: 600;
+    font-size: 47px;
+    color: white;
+
+}
+.cta {
+    background-color: #E9DCFF;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border:none ;
+    margin-top: 20px;
+
+}
+
+.cta-text {
+    font-weight: 700;
+    font-size: 19px;
+    color: #1E1E1E;
+
+}
+
+.cta-icon {
+    color: #1E1E1E;
+}
+.hero-image {
+    display: block;
+    width: 135%;
+    height: auto;
+}
+
+.hero-image-container {
+    position: absolute;
+    width: 90vw;
+    overflow: hidden;
+    margin-top: 2.5rem;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.navbar-items {
+    display: none;
+    width: 100%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.hamburger-container {
+    margin-left: auto;
+    margin-top: 4px;
+}
+.nav-icon {
+    color: white;
+}
+.navbar-mobile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7rem;
+    margin-left: -40px;
+}
+
+.navbar-item {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    padding-left: 15px;
+}
+.mobile-auth {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.current {
+    background-color: #E9DCFF;
+    border-radius: 8px;
+    color: #0e0e0e;
+    overflow-x: hidden;
+    padding: 8px 15px;
+}
+
+
