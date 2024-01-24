@@ -18,24 +18,41 @@
             <div>
                 <img src="images/starlingbank.png" alt="">
             </div>
-            <div class="navbar-items navbar-hidden" id="navbar-items">
-                <a class="navbar-item current" href="#">Features</a>
-                <a class="navbar-item" href="#">Pricing</a>
-                <a class="navbar-item" href="#">Help</a>
-                <a class="navbar-item" href="#">Blog</a>
-                <a class="navbar-item" href="#">About Us</a>
-                <div id="mobile-auth" class="mobile-auth">
-                    <a class="navbar-item" href="#">Login</a>
-                    <a class="navbar-item" href="#">Sign Up</a>
+            <div class="mobile-navbar">
+                <div class="navbar-items navbar-hidden" id="navbar-items">
+                    <a class="navbar-item current" href="#">Features</a>
+                    <a class="navbar-item" href="#">Pricing</a>
+                    <a class="navbar-item" href="#">Help</a>
+                    <a class="navbar-item" href="#">Blog</a>
+                    <a class="navbar-item" href="#">About Us</a>
+                    <div id="mobile-auth" class="mobile-auth">
+                        <a class="navbar-item" href="#">Login</a>
+                        <a class="navbar-item" href="#">Sign Up</a>
+                    </div>
+                </div>
+                <div class="hamburger-container" onclick={changeNavbarState()}>
+                    <i class="fa-solid fa-bars fa-2xl nav-icon" id="nav-burger"></i>
+                    <i class="fa-solid fa-xmark fa-2xl nav-icon" id="nav-cross"></i>
                 </div>
             </div>
-            <div class="hamburger-container" onclick={changeNavbarState()}>
-                <i class="fa-solid fa-bars fa-2xl nav-icon" id="nav-burger"></i>
-                <i class="fa-solid fa-xmark fa-2xl nav-icon" id="nav-cross"></i>
+            <div class="desktop-navbar">
+                <div class="navbar-container">
+                   <div>
+                        <a class="navbar-item" href="#">Features</a>
+                        <a class="navbar-item" href="#">Pricing</a>
+                        <a class="navbar-item highlight" href="#">Help</a>
+                        <a class="navbar-item" href="#">Blog</a>
+                        <a class="navbar-item" href="#">About Us</a>
+                   </div>
+                </div>
+                <div class="navbar-button-container">
+                    <button class="navbar-button">Log In</button>
+                    <button class="navbar-button">Sign Up</button>
+                </div>
             </div>
         </div>
         <div class="content" id="content">
-            <div class="a">
+            <div class="a hero">
                 <div>
                     <h3 class="tagline">Start Saving Money</h3>
                     <h1 class="hero-text">Smart Credit Card For Your Daily Life.</h1>

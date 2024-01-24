@@ -19,13 +19,18 @@ body {
     display: grid;
     grid-template-rows: auto auto;
     padding: 2.5rem;
+   
 }
 
 @media only screen and (min-width: 769px) {
-    .wrapper {
+    .content {
         display: grid;
         grid-template-columns: 50% 50%;
+    } 
+    .wrapper {
+        margin: 10px 100px;
     }
+    
 }
 .tagline {
     font-weight: 500;
@@ -72,6 +77,37 @@ body {
     width: 90vw;
     overflow: hidden;
     margin-top: 2.5rem;
+} 
+
+@media only screen and (min-width: 769px) {
+    .hero-image {
+      width: auto;
+        
+    } 
+
+    .hero-text {
+        max-width: 542px;
+    }
+
+    .hero {
+        display: flex;
+        align-items:center ;
+        justify-content: left;
+        height: 70vh;
+    }
+
+    .hero-image-container {
+      width: auto;
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      margin-left: 10px;
+    }
+    .b {
+        display:flex;
+        justify-content: center;
+
+    }
 }
 
 .navbar {
@@ -123,6 +159,49 @@ body {
     color: #0e0e0e;
     overflow-x: hidden;
     padding: 8px 15px;
+} 
+.mobile-navbar {
+    display: block;
+    width: 100%;
+    display: flex;
+    direction: row;
 }
+
+.desktop-navbar {
+    display: none;
+    
+}
+
+@media only screen and (min-width: 769px) {
+    .mobile-navbar {
+        display: none;
+    }
+
+    .desktop-navbar {
+        display: flex;
+        direction: row;
+        width: 100%;
+       
+    }
+} 
+
+.navbar-button-container {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+}
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.navbar-button {
+    width: 100px;
+}
+
+
 
 
