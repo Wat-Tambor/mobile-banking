@@ -53,7 +53,7 @@ body {
     border-radius: 8px;
     border:none ;
     margin-top: 20px;
-
+    transition: box-shadow 0.3s ease;
 }
 
 .cta-text {
@@ -201,6 +201,46 @@ body {
 .navbar-button {
     width: 100px;
 }
+.desktop-navbar-items {
+    display: flex;
+    gap: 60px;
+}
+.highlight {
+    color: #E9DCFF;
+}
+.navbar-button {
+    border-radius: 10px;
+    height: 54px;
+    width: 132px;
+    background-color: #E9DCFF;
+    border: none;
+    margin-top: -10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+@media only screen and (min-width: 769px) {
+    .navbar-item {
+        font-size: 18px;
+    }
+    .tagline {
+        font-size: 18px;
+    }
+    .hero-text {
+        font-size: 55px;
+    }
+    .cta-text {
+        font-size: 24px;
+    }
+}
+button:hover, .navbar-item:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+.cta:hover {
+    box-shadow: 0 0 20px #E9DCFF;
+    opacity: 1;
+}
+
 
 
 
